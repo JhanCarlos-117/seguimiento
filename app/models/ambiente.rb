@@ -1,0 +1,3 @@
+class Ambiente < ApplicationRecord
+
+end
