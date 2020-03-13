@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
+  get 'ambientes/index'
+  get 'ambientes/show'
+  get 'ambientes/edit'
+  get 'ambientes/new'
+  get 'ambientes/create'
   root to: 'home#index'
   get 'comentarios/index'
   get 'comentarios/show'
   get 'comentarios/new'
   get 'comentarios/create'
    resources :anotaciones
+   resources :ambientes
 
 
   devise_for :users
